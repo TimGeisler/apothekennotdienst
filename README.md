@@ -17,6 +17,43 @@ The serverless function accesses the data from a PostgreSQL database hosted in t
 
 ## Installation
 
+### PostgreSQL database
+
+You need a PostgreSQL database in the cloud for storing the data.
+https://www.elephantsql.com/ ElephantSQL provides a PostgreSQL database "as a service".
+The free "Tiny Turtle" version is sufficient for this application.
+
+Create an instance and copy your database URL for later use.
+
+Execute the following SQL queries to create your schema:
+
+'''
+create table if not exists pharmacies (
+	"name" text not null,
+	phone text,
+	street text not null,
+	postalcode text not null,
+	city text not null,
+	loc point,
+	primary key(name, city),
+	unique (name, city)
+);
+create index on pharmacies using gist(loc);
+create table if not exists services (
+	"name" text not null,
+	city text not null,
+	"start" timestamp with time zone,
+	"end" timestamp with time zone,
+	foreign key ("name", city) references pharmacies ("name", city),
+	unique ("name", city, "start", "end")
+);
+'''
+
+Fill those tables with the appropriate data on the pharmacies (geolocation) and emergency services.
+
+The method how to fill this table depends on the respective "Landesapothekerkammer".
+Some provide information in XML format, others only provide web pages or PDF documents.
+
 ### Local installation of the React/TypeScript development environment
 
 Set the environment variable POSTGRESQL_URL to the URL (including username and password) of your PostgreSQL database.
@@ -34,16 +71,17 @@ http://localhost:3000?name=XYZ-Apotheke&city=Musterstadt
 
 ### Netlify configuration
 
-### PostgreSQL database
-
-- database URL
-
-- Schema
-
-- content depends on the "Landesapothekerkammer".
-  Some provide information in XML format, others only provide web pages or PDF documents.
-
-- use elephantsql for free or cheap hosting
+- Build & deploy
+  - Build settings
+    - Repository: github.com/TimGeisler/apothekennotdienst (or your clone)
+    - Build command: yarn build
+    - Publish directory: build
+    - Builds: Active
+  - Deploy contexts
+    - Production branch: main
+    - Deploy only the production branch
+  - Environment variables
+    - POSTGRESQL_URL: set to the URL of your database
 
 ### Hardware in the Pharmacy
 
@@ -68,7 +106,7 @@ a Raspberry PI Zero W is sufficient.
 
 ### Raspberry PI Zero W configuration
 
-- HDMI configuration (sufficient power, rotation)
+- HDMI configuration (sufficient power, display rotation)
 - autostart Chromium with web page in kiosk mode
 - use the Netlify app url
 - no screen saver
