@@ -1,0 +1,87 @@
+{
+  "name": "apothekennotdienst",
+  "description": "pharmacy emergency service display",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "Tim Geisler"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0",
+    "bootstrap": "^4.5.3",
+    "leaflet": "^1.7.1",
+    "lodash": "^4.17.20",
+    "moment-timezone": "^0.5.32",
+    "pg": "^8.5.1",
+    "query-string": "^6.13.7",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.3.0",
+    "react-bootstrap-icons": "^1.1.0",
+    "react-dom": "^17.0.1",
+    "react-leaflet": "^3.0.2",
+    "react-query": "^2.26.4",
+    "react-scripts": "4.0.1",
+    "typescript": "^4.1.3"
+  },
+  "scripts": {
+    "start": "run-p start:**",
+    "start:app": "react-scripts start",
+    "start:lambda": "env-cmd netlify-lambda serve --config ./webpack.functions.js src/api",
+    "build": "run-p build:**",
+    "build:app": "react-scripts build",
+    "build:lambda": "netlify-lambda build --config ./webpack.functions.js src/api",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy:draft": "netlify deploy --dir=build --functions=functions",
+    "deploy:prod": "netlify deploy --dir=build --functions=functions --prod"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TimGeisler/apothekennotdienst"
+  },
+  "bugs": {
+    "url": "https://github.com/TimGeisler/apothekennotdienst/issues"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.12.7",
+    "@types/aws-lambda": "^8.10.66",
+    "@types/bootstrap": "^5.0.1",
+    "@types/jest": "^26.0.19",
+    "@types/leaflet": "^1.5.19",
+    "@types/lodash": "^4.14.165",
+    "@types/node": "^14.14.12",
+    "@types/pg": "^7.14.7",
+    "@types/react": "^17.0.0",
+    "@types/react-bootstrap": "^0.32.25",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-leaflet": "^2.5.2",
+    "env-cmd": "^10.1.0",
+    "http-proxy-middleware": "^1.0.6",
+    "netlify-cli": "^2.69.6",
+    "netlify-lambda": "^2.0.1",
+    "npm-run-all": "^4.1.5",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "resolutions": {
+    "**/@typescript-eslint/eslint-plugin": "^4.1.1",
+    "**/@typescript-eslint/parser": "^4.1.1"
+  }
+}

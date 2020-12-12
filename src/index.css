@@ -1,0 +1,13 @@
+@media screen and (orientation: portrait) {
+}
+
+@media screen and (orientation: landscape) {
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nobile {
+    font-family: 'Nobile', sans-serif;
+}
