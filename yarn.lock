@@ -1470,10 +1470,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/build@^6.0.0":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-6.0.2.tgz#a5f3fcbf887d0653db58c65c205a68895fccb91a"
-  integrity sha512-0RweXdxyy14QJ37YnBcJU5hQ1xmhzpY4ayXlJWWVj4DAglw49qVLoREbRF7Cln60eNvBrvpYE8V3hhuLjVXkmw==
+"@netlify/build@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-7.0.0.tgz#de58b32f831795a37727d33b52274c3a9901774e"
+  integrity sha512-C3xb4cOCx4ivyuPiSBcH7nXW3ZN02xHulpFKGA/hRlwoqIFDEFK/+n4tu9E1t6gzaCBjW/sukCbT/zjXXwDatw==
   dependencies:
     "@bugsnag/js" "^7.0.0"
     "@netlify/cache-utils" "^1.0.6"
@@ -2518,10 +2518,15 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*", "@types/node@>= 8", "@types/node@^14.0.27", "@types/node@^14.14.12":
+"@types/node@*", "@types/node@>= 8", "@types/node@^14.0.27":
   version "14.14.12"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.12.tgz#0b1d86f8c40141091285dea02e4940df73bba43f"
   integrity sha512-ASH8OPHMNlkdjrEdmoILmzFfsJICvhBsFfAum4aKZ/9U4B6M6tTmTPh+f3ttWdD74CEGV5XvXWkbyfSdXaTd7g==
+
+"@types/node@^14.14.13":
+  version "14.14.13"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.13.tgz#9e425079799322113ae8477297ae6ef51b8e0cdf"
+  integrity sha512-vbxr0VZ8exFMMAjCW8rJwaya0dMCDyYW2ZRdTyjtrCvJoENMpdUHOT/eTzvgyA5ZnqRZ/sI0NwqAxNHKYokLJQ==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -9282,11 +9287,6 @@ junk@^3.1.0:
   resolved "https://registry.yarnpkg.com/junk/-/junk-3.1.0.tgz#31499098d902b7e98c5d9b9c80f43457a88abfa1"
   integrity sha512-pBxcB3LFc8QVgdggvZWyeys+hnrNWg4OcZIU/1X59k5jQdLBlCsYGRQaz234SqoRLTCgMH00fY0xRJH+F9METQ==
 
-jwt-decode@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/jwt-decode/-/jwt-decode-2.2.0.tgz#7d86bd56679f58ce6a84704a657dd392bba81a79"
-  integrity sha1-fYa9VmefWM5qhHBKZX3TkruoGnk=
-
 jwt-decode@^3.0.0:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/jwt-decode/-/jwt-decode-3.1.2.tgz#3fb319f3675a2df0c2895c8f5e9fa4b67b04ed59"
@@ -10329,12 +10329,12 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@^2.69.6:
-  version "2.69.6"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.69.6.tgz#3eeb108cb44c0644f4d99a16d61013b9bcd5ec45"
-  integrity sha512-oGv98SogJYT0EkPW/kt4Ealti5I/dSpPLwVt9Q58bsw3+Twcq5dCINdNbdxVgLb1eFd/gxvqc3jX3RN2nNm20A==
+netlify-cli@^2.69.8:
+  version "2.69.8"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.69.8.tgz#7915948efc32263d0fbef277861622c482f741f0"
+  integrity sha512-Lo89ZY7Iyout2fm3D9K6jOUcSBFw5yNvA3UpoZVsM4SC2nFJxdAT86k/wgBe14BUDfLTdhcsPvTzEFuYPfTuhg==
   dependencies:
-    "@netlify/build" "^6.0.0"
+    "@netlify/build" "^7.0.0"
     "@netlify/config" "^2.0.9"
     "@netlify/plugin-edge-handlers" "^1.10.0"
     "@netlify/traffic-mesh-agent" "^0.27.0"
@@ -10420,10 +10420,10 @@ netlify-cli@^2.69.6:
     wrap-ansi "^6.0.0"
     write-file-atomic "^3.0.0"
 
-netlify-lambda@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/netlify-lambda/-/netlify-lambda-2.0.1.tgz#8be3594a871f72dc18414ed8b0a01ed79724356b"
-  integrity sha512-5Yel8NlIEV+2KBAmUISeQqjrLW71n2VwWjoUFRJZuGpbD2Omn/4kgLUm/T4A7swrxygQMhtKDkZs1WXNUZP/ow==
+netlify-lambda@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/netlify-lambda/-/netlify-lambda-2.0.2.tgz#1a64286d9094ca9e5fd9088315dd54cf42ddfa43"
+  integrity sha512-Pf9M+vRsAgSLQ7ZaHajqgIGWYDXYEHGhzM2f8BwYbc3+SL/PjPXR1hdtnl9dgwzrFbPQYEOjHU5LqficUenhYw==
   dependencies:
     "@babel/core" "^7.10.4"
     "@babel/plugin-proposal-class-properties" "^7.10.4"
@@ -10436,7 +10436,7 @@ netlify-lambda@^2.0.1:
     express "^4.17.1"
     express-logging "^1.1.1"
     globby "^11.0.1"
-    jwt-decode "^2.2.0"
+    jwt-decode "^3.0.0"
     toml "^3.0.0"
     webpack "^4.43.0"
     webpack-merge "^4.2.2"
@@ -12743,10 +12743,10 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
-react-leaflet@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/react-leaflet/-/react-leaflet-3.0.2.tgz#4133a0550efe7e24be272b9e24e72fa98b51b751"
-  integrity sha512-7JxMV9HOo94jFwn1z+gcHVcYWeMxD994YsLxX3yyWebGOsLxpYfiQgNI7RPZWcAtcBK8XYSRB6WUj8NNb9hgbw==
+react-leaflet@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/react-leaflet/-/react-leaflet-3.0.4.tgz#c855b8e346c400eb72322a1ce0b4d80f800b85ed"
+  integrity sha512-jwke/rxJt3zNIjqD9PnSPqQHQZAhrDph99mYIylz9/OWbYqdw0lBko5ExZUH2k68OldwIyDxQ6D61TuaZi7oGg==
   dependencies:
     "@react-leaflet/core" "^1.0.2"
 
