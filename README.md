@@ -6,7 +6,7 @@ A pharmacy in Germany is legally required to display at least 2 other nearby pha
 
 This app displays this information along with the location of the other nearby pharmacies on a map.
 
-![screenshot of emergency pharmacy service information](doc/Screenshot_2020-12-13 Apothekennotdienst.png)
+![screenshot of emergency pharmacy service information](/doc/Screenshot_2020-12-13 Apothekennotdienst.png)
 
 ## System setup
 
