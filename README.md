@@ -6,6 +6,8 @@ A pharmacy in Germany is legally required to display at least 2 other nearby pha
 
 This app displays this information along with the location of the other nearby pharmacies on a map.
 
+![screenshot of emergency pharmacy service information](doc/Screenshot_2020-12-13 Apothekennotdienst.png)
+
 ## System setup
 
 The pharmacy uses a cheap LCD monitor in its store window.
@@ -20,14 +22,14 @@ The serverless function accesses the data from a PostgreSQL database hosted in t
 ### PostgreSQL database
 
 You need a PostgreSQL database in the cloud for storing the data.
-https://www.elephantsql.com/ ElephantSQL provides a PostgreSQL database "as a service".
+[ElephantSQL](https://www.elephantsql.com/) provides a PostgreSQL database "as a service".
 The free "Tiny Turtle" version is sufficient for this application.
 
 Create an instance and copy your database URL for later use.
 
 Execute the following SQL queries to create your schema:
 
-'''
+```sql
 create table if not exists pharmacies (
 	"name" text not null,
 	phone text,
@@ -47,7 +49,7 @@ create table if not exists services (
 	foreign key ("name", city) references pharmacies ("name", city),
 	unique ("name", city, "start", "end")
 );
-'''
+```
 
 Fill those tables with the appropriate data on the pharmacies (geolocation) and emergency services.
 
@@ -59,11 +61,11 @@ Some provide information in XML format, others only provide web pages or PDF doc
 Set the environment variable POSTGRESQL_URL to the URL (including username and password) of your PostgreSQL database.
 This can be provided using a file `.env`.
 
-`
+```sh
 yarn
 yarn build
 yarn start
-`
+```
 
 Your local application is then running at http://localhost:3000.
 In order to select the correct pharmacy and city, you have to provide these using query parameters:
