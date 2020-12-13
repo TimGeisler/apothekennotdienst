@@ -8,6 +8,10 @@ This app displays this information along with the location of the other nearby p
 
 ![screenshot of emergency pharmacy service information](doc/screenshot.png)
 
+Please note that in some states in Germany the respective "Landesapothekerkammer" provides such a service for free
+(e.g., https://www.lak-bw.de/notdienstportal/elektronische-notdienstanzeige.html).
+In other states (e.g., Bavaria) there is no such free service.
+
 ## System setup
 
 The pharmacy uses a cheap LCD monitor in its store window.
