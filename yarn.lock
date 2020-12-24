@@ -2298,10 +2298,10 @@
   resolved "https://registry.yarnpkg.com/@types/aria-query/-/aria-query-4.2.0.tgz#14264692a9d6e2fa4db3df5e56e94b5e25647ac0"
   integrity sha512-iIgQNzCm0v7QMhhe4Jjn9uRh+I6GoPmt03CbEtwx3ao8/EfoQcmgtqH4vQ5Db/lxiIGaWDv6nwvunuh0RyX0+A==
 
-"@types/aws-lambda@^8.10.67":
-  version "8.10.67"
-  resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-8.10.67.tgz#e74d1dc31ddfa5ca6cd3ca68b5bef719d0628d1c"
-  integrity sha512-rQPIkP7Xs6oKR6VYdoPbKghzndzlvTJHbAGvd5PE6LXUo4PNPVP2y1dLTGgEXHapXZraTM9oBLrJFgozJom9BA==
+"@types/aws-lambda@^8.10.68":
+  version "8.10.68"
+  resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-8.10.68.tgz#51d5727e49e5ae13303adb10e2e8ffee7df12c71"
+  integrity sha512-0/0ghix1WXU8xJxvRx/VtmAesLR6+dPFWrNhQ90Pq6oOYN3x+oRVPnjjYNOIRuEd7fmKovl7s6ILCXMnbDr4Mg==
 
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.12"
