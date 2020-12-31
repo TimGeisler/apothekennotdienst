@@ -122,7 +122,7 @@ a [Raspberry PI Zero W (including case)](https://www.amazon.de/gp/product/B072TN
 
   in file `/boot/config.txt`:
   ```
-  hdmi_save=1
+  hdmi_safe=1
   display_rotate=1
   ```
   More documentation is available from https://www.raspberrypi.org/documentation/configuration/config-txt/video.md
