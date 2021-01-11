@@ -12653,10 +12653,10 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
-react-bootstrap-icons@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/react-bootstrap-icons/-/react-bootstrap-icons-1.2.2.tgz#507f48680f315b8e3657d8b026fd36e90223bcf3"
-  integrity sha512-anJNFvXXJZwk/aWOg9tIJaetLUABC7FZhJ7EDtkFl4oBp7LAxI2nfr+Gg2S1QmzKUozovcGhYLKHSrRWwu5DKA==
+react-bootstrap-icons@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/react-bootstrap-icons/-/react-bootstrap-icons-1.2.3.tgz#af142830b8f017a7e459790aba579ae05ed85214"
+  integrity sha512-VPQFuFMVwsK93FTbvE/8InUbX5irc2VlQbCOiMvj80oei6+xek0Q5sOpHPdgVRUn2BeiCAAc9OEOgrebZLWLMA==
   dependencies:
     prop-types "^15.7.2"
 
