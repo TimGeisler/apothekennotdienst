@@ -13,7 +13,7 @@
     "@testing-library/user-event": "^12.6.0",
     "bootstrap": "^4.5.3",
     "leaflet": "^1.7.1",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "moment-timezone": "^0.5.32",
     "pg": "^8.5.1",
     "query-string": "^6.13.8",
