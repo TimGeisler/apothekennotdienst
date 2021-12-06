@@ -62,7 +62,7 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.12.7",
-    "@types/aws-lambda": "^8.10.68",
+    "@types/aws-lambda": "^8.10.86",
     "@types/bootstrap": "^5.0.1",
     "@types/jest": "^26.0.19",
     "@types/leaflet": "^1.5.19",
